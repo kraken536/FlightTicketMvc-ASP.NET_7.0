@@ -7,7 +7,7 @@
     <h1 class="display-4">Welcome To Our Flight Booking System!</h1>
     <p class="lead">Not Finished Yet Beta Version</p>
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p>This system can be used to book flights according to precise criterias.</p>
     <p class="lead">
         <a class="btn btn-primary btn-lg" role="button" asp-action="Login" asp-controller="Account">Learn more</a>
     </p>
@@ -15,14 +15,58 @@
     <form>
         <div class="form-group">
             <label for="exampleInputEmail1">From:</label>
-            <input type="text" class="form-control" id="Destination" aria-describedby="dest" placeholder="Where are you going from ?">  
+            <input type="text" class="form-control" id="Destination" aria-describedby="dest" placeholder="Where are you coming from?">  
         </div>
         <br />
         <div class="form-group">
             <label for="exampleInputPassword1">To:</label>
-            <input type="text" class="form-control" id="dest" placeholder="Where are you going to ?">
+            <input type="text" class="form-control" id="dest" placeholder="Where are you going to?">
         </div>
         <br />
         <button type="submit" class="btn btn-primary">Search</button>
     </form>
+    <br />
+
+    <div class="bd-example">
+        <table class="table table-bordered border-primary">
+            <thead>
+                <tr>
+                    <th scope="col">Flight ID</th>
+                    <th scope="col">Source Airport</th>
+                    <th scope="col">Destination Airport</th>
+                    <th scope="col">Departure Date</th>
+                    <th scope="col">Arrival Date</th>
+                    <th scope="col">Seats Details</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>toto</td>
+                    <td>Mark</td>
+                    <td><a asp-action="SeatDetails" asp-controller="Flight">Details</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>fat</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td >Larry the Bird</td>
+                    <td>twitter</td>
+                    <td>Thornton</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
 </div>
