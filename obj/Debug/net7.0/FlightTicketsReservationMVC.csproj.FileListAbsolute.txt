@@ -81,3 +81,4 @@ C:\Users\q\Desktop\.Net Backend Challenge\FlightTicketsReservationMVC\FlightTick
 C:\Users\q\Desktop\.Net Backend Challenge\FlightTicketsReservationMVC\FlightTicketsReservationMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\q\Desktop\.Net Backend Challenge\FlightTicketsReservationMVC\FlightTicketsReservationMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\q\Desktop\.Net Backend Challenge\FlightTicketsReservationMVC\FlightTicketsReservationMVC\obj\Debug\net7.0\EFCoreSqlServerDateOnlyTimeOnly.cs
+C:\Users\q\Desktop\.Net Backend Challenge\FlightTicketsReservationMVC\FlightTicketsReservationMVC\obj\Debug\net7.0\scopedcss\Views\Flight\SeatDetails.cshtml.rz.scp.css

@@ -1,20 +1,19 @@
-/* _content/FlightTicketsReservationMVC/Views/Flight/SeatDetails.cshtml.rz.scp.css */
-*[b-r9f6qtwk54],
-*[b-r9f6qtwk54]:before,
-*[b-r9f6qtwk54]:after {
+﻿*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
-html[b-r9f6qtwk54] {
+html {
     font-size: 16px;
 }
 
-.plane[b-r9f6qtwk54] {
+.plane {
     margin: 20px auto;
     max-width: 300px;
 }
 
-.cockpit[b-r9f6qtwk54] {
+.cockpit {
     height: 250px;
     position: relative;
     overflow: hidden;
@@ -35,14 +34,14 @@ html[b-r9f6qtwk54] {
     border-left: 5px solid #d8d8d8;
 }
 
-h1[b-r9f6qtwk54] {
+h1 {
     width: 60%;
     margin: 100px auto 35px auto;
 }
 
 }
 
-.exit[b-r9f6qtwk54] {
+.exit {
     position: relative;
     height: 50px;
     &:before, &:after
@@ -61,38 +60,38 @@ h1[b-r9f6qtwk54] {
     transform: translate(0, -50%);
 }
 
-&[b-r9f6qtwk54]:before {
+&:before {
     left: 0;
 }
 
-&[b-r9f6qtwk54]:after {
+&:after {
     right: 0;
 }
 
 }
 
-.fuselage[b-r9f6qtwk54] {
+.fuselage {
     border-right: 5px solid #d8d8d8;
     border-left: 5px solid #d8d8d8;
 }
 
-ol[b-r9f6qtwk54] {
+ol {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.row[b-r9f6qtwk54] {
+.row {
 }
 
-.seats[b-r9f6qtwk54] {
+.seats {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
 }
 
-.seat[b-r9f6qtwk54] {
+.seat {
     display: flex;
     flex: 0 0 14.28571428571429%;
     padding: 5px;
@@ -103,25 +102,25 @@ ol[b-r9f6qtwk54] {
     margin-right: 14.28571428571429%;
 }
 
-input[type="checkbox"][b-r9f6qtwk54] {
+input[type="checkbox"] {
     position: absolute;
     opacity: 0;
 }
 
-    input[type="checkbox"]:checked[b-r9f6qtwk54] {
+    input[type="checkbox"]:checked {
         + label
 
 {
     background: #bada55;
     -webkit-animation-name: rubberBand;
-    animation-name: rubberBand-b-r9f6qtwk54;
+    animation-name: rubberBand;
     animation-duration: 300ms;
     animation-fill-mode: both;
 }
 
 }
 
-input[type="checkbox"]:disabled[b-r9f6qtwk54] {
+input[type="checkbox"]:disabled {
     + label
 
 {
@@ -139,7 +138,7 @@ input[type="checkbox"]:disabled[b-r9f6qtwk54] {
     transform: translate(-50%, 0%);
 }
 
-&:hover[b-r9f6qtwk54] {
+&:hover {
     box-shadow: none;
     cursor: not-allowed;
 }
@@ -147,7 +146,7 @@ input[type="checkbox"]:disabled[b-r9f6qtwk54] {
 }
 }
 
-label[b-r9f6qtwk54] {
+label {
     display: block;
     position: relative;
     width: 100%;
@@ -174,7 +173,7 @@ label[b-r9f6qtwk54] {
     border-radius: 3px;
 }
 
-&:hover[b-r9f6qtwk54] {
+&:hover {
     cursor: pointer;
     box-shadow: 0 0 0px 2px #5c6aff;
 }
@@ -219,7 +218,7 @@ label[b-r9f6qtwk54] {
     }
 }
 
-@keyframes rubberBand-b-r9f6qtwk54 {
+@keyframes rubberBand {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
@@ -256,56 +255,7 @@ label[b-r9f6qtwk54] {
     }
 }
 
-.rubberBand[b-r9f6qtwk54] {
+.rubberBand {
     -webkit-animation-name: rubberBand;
-    animation-name: rubberBand-b-r9f6qtwk54;
-}
-/* _content/FlightTicketsReservationMVC/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand[b-8qnwq8mxg3] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
-
-a[b-8qnwq8mxg3] {
-  color: #0077cc;
-}
-
-.btn-primary[b-8qnwq8mxg3] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active[b-8qnwq8mxg3], .nav-pills .show > .nav-link[b-8qnwq8mxg3] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.border-top[b-8qnwq8mxg3] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-8qnwq8mxg3] {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow[b-8qnwq8mxg3] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy[b-8qnwq8mxg3] {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-.footer[b-8qnwq8mxg3] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    animation-name: rubberBand;
 }
