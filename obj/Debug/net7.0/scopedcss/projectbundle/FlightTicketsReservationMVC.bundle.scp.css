@@ -1,7 +1,5 @@
 /* _content/FlightTicketsReservationMVC/Views/Flight/SeatDetails.cshtml.rz.scp.css */
-*[b-r9f6qtwk54],
-*[b-r9f6qtwk54]:before,
-*[b-r9f6qtwk54]:after {
+*[b-r9f6qtwk54], *[b-r9f6qtwk54]:before, *[b-r9f6qtwk54]:after {
     box-sizing: border-box;
 }
 
@@ -20,56 +18,52 @@ html[b-r9f6qtwk54] {
     overflow: hidden;
     text-align: center;
     border-bottom: 5px solid #d8d8d8;
-    &:before
-
-{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
-    width: 100%;
-    border-radius: 50%;
-    border-right: 5px solid #d8d8d8;
-    border-left: 5px solid #d8d8d8;
 }
 
-h1[b-r9f6qtwk54] {
-    width: 60%;
-    margin: 100px auto 35px auto;
-}
+    .cockpit[b-r9f6qtwk54]:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 500px;
+        width: 100%;
+        border-radius: 50%;
+        border-right: 5px solid #d8d8d8;
+        border-left: 5px solid #d8d8d8;
+    }
 
-}
+    .cockpit h1[b-r9f6qtwk54] {
+        width: 60%;
+        margin: 100px auto 35px auto;
+    }
 
 .exit[b-r9f6qtwk54] {
     position: relative;
     height: 50px;
-    &:before, &:after
-
-{
-    content: "EXIT";
-    font-size: 14px;
-    line-height: 18px;
-    padding: 0px 2px;
-    font-family: "Arial Narrow", Arial, sans-serif;
-    display: block;
-    position: absolute;
-    background: green;
-    color: white;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 
-&[b-r9f6qtwk54]:before {
-    left: 0;
-}
+    .exit[b-r9f6qtwk54]:before, .exit[b-r9f6qtwk54]:after {
+        content: "EXIT";
+        font-size: 14px;
+        line-height: 18px;
+        padding: 0px 2px;
+        font-family: "Arial Narrow", Arial, sans-serif;
+        display: block;
+        position: absolute;
+        background: green;
+        color: white;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
 
-&[b-r9f6qtwk54]:after {
-    right: 0;
-}
+    .exit[b-r9f6qtwk54]:before {
+        left: 0;
+    }
 
-}
+    .exit[b-r9f6qtwk54]:after {
+        right: 0;
+    }
 
 .fuselage[b-r9f6qtwk54] {
     border-right: 5px solid #d8d8d8;
@@ -82,9 +76,6 @@ ol[b-r9f6qtwk54] {
     margin: 0;
 }
 
-.row[b-r9f6qtwk54] {
-}
-
 .seats[b-r9f6qtwk54] {
     display: flex;
     flex-direction: row;
@@ -94,93 +85,79 @@ ol[b-r9f6qtwk54] {
 
 .seat[b-r9f6qtwk54] {
     display: flex;
-    flex: 0 0 14.28571428571429%;
+    flex: 0 0 14.2857142857%;
     padding: 5px;
     position: relative;
-    &:nth-child(3)
-
-{
-    margin-right: 14.28571428571429%;
 }
 
-input[type="checkbox"][b-r9f6qtwk54] {
-    position: absolute;
-    opacity: 0;
-}
+    .seat:nth-child(3)[b-r9f6qtwk54] {
+        margin-right: 14.2857142857%;
+    }
 
-    input[type="checkbox"]:checked[b-r9f6qtwk54] {
-        + label
+    .seat input[type=checkbox][b-r9f6qtwk54] {
+        position: absolute;
+        opacity: 0;
+    }
 
-{
-    background: #bada55;
-    -webkit-animation-name: rubberBand;
-    animation-name: rubberBand-b-r9f6qtwk54;
-    animation-duration: 300ms;
-    animation-fill-mode: both;
-}
+        .seat input[type=checkbox]:checked + label[b-r9f6qtwk54] {
+            background: #bada55;
+            -webkit-animation-name: rubberBand;
+            animation-name: rubberBand-b-r9f6qtwk54;
+            animation-duration: 300ms;
+            animation-fill-mode: both;
+        }
 
-}
+        .seat input[type=checkbox]:disabled + label[b-r9f6qtwk54] {
+            background: #dddddd;
+            text-indent: -9999px;
+            overflow: hidden;
+        }
 
-input[type="checkbox"]:disabled[b-r9f6qtwk54] {
-    + label
+            .seat input[type=checkbox]:disabled + label[b-r9f6qtwk54]:after {
+                content: "X";
+                text-indent: 0;
+                position: absolute;
+                top: 4px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
 
-{
-    background: #dddddd;
-    text-indent: -9999px;
-    overflow: hidden;
-    &:after
+            .seat input[type=checkbox]:disabled + label:hover[b-r9f6qtwk54] {
+                box-shadow: none;
+                cursor: not-allowed;
+            }
 
-{
-    content: "X";
-    text-indent: 0;
-    position: absolute;
-    top: 4px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
+    .seat label[b-r9f6qtwk54] {
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5rem;
+        padding: 4px 0;
+        background: #F42536;
+        border-radius: 5px;
+        animation-duration: 300ms;
+        animation-fill-mode: both;
+    }
 
-&:hover[b-r9f6qtwk54] {
-    box-shadow: none;
-    cursor: not-allowed;
-}
+        .seat label[b-r9f6qtwk54]:before {
+            content: "";
+            position: absolute;
+            width: 75%;
+            height: 75%;
+            top: 1px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 3px;
+        }
 
-}
-}
-
-label[b-r9f6qtwk54] {
-    display: block;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.5rem;
-    padding: 4px 0;
-    background: #f42536;
-    border-radius: 5px;
-    animation-duration: 300ms;
-    animation-fill-mode: both;
-    &:before
-
-{
-    content: "";
-    position: absolute;
-    width: 75%;
-    height: 75%;
-    top: 1px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 3px;
-}
-
-&:hover[b-r9f6qtwk54] {
-    cursor: pointer;
-    box-shadow: 0 0 0px 2px #5c6aff;
-}
-
-}
-}
+        .seat label:hover[b-r9f6qtwk54] {
+            cursor: pointer;
+            box-shadow: 0 0 0px 2px #5C6AFF;
+        }
 
 @-webkit-keyframes rubberBand {
     0% {
